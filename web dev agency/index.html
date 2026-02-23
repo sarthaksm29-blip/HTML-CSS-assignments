@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebDesignPro - Creative Solutions</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#222831;
+  color:#DFD0B8;
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  background:#222831;
+  padding:18px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid #393E46;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:22px;
+  color:#948979;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#DFD0B8;
+  font-size:14px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#948979;
+}
+
+.btn-quote{
+  background:#948979;
+  color:#222831;
+  padding:9px 22px;
+  border-radius:6px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-quote:hover{
+  background:#DFD0B8;
+  transform:translateY(-3px);
+}
+
+/* HERO */
+.hero{
+  background:#393E46;
+  padding:90px 10%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hero-text h1{
+  font-size:48px;
+  margin-bottom:15px;
+  color:#DFD0B8;
+}
+
+.hero-text p{
+  margin-bottom:25px;
+  color:#948979;
+}
+
+.hero-image img{
+  max-width:90%;
+  border-radius:12px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+  transition:0.4s;
+}
+
+.hero-image img:hover{
+  transform:scale(1.05);
+}
+
+/* SERVICES */
+.services{
+  display:flex;
+  justify-content:space-between;
+  padding:80px 10%;
+  gap:25px;
+  background:#222831;
+}
+
+.service-card{
+  flex:1;
+  padding:30px;
+  border-radius:12px;
+  background:#393E46;
+  transition:0.4s;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+  background:#948979;
+  color:#222831;
+}
+
+.service-card span{
+  font-size:32px;
+}
+
+.service-card h3{
+  margin:15px 0 10px;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  padding:90px 10%;
+  align-items:center;
+  gap:40px;
+  background:#393E46;
+}
+
+.about-text h2{
+  margin-bottom:15px;
+  color:#DFD0B8;
+}
+
+.about-text p{
+  color:#948979;
+}
+
+.about-image img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* PROJECTS */
+.projects{
+  padding:90px 10%;
+  background:#222831;
+  text-align:center;
+}
+
+.projects h2{
+  margin-bottom:40px;
+}
+
+.project-grid{
+  display:flex;
+  gap:25px;
+}
+
+.project-item{
+  flex:1;
+  background:#393E46;
+  padding:20px;
+  border-radius:12px;
+  transition:0.4s;
+}
+
+.project-item:hover{
+  transform:translateY(-8px);
+  background:#948979;
+  color:#222831;
+}
+
+.project-item img{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+/* FOOTER */
+footer{
+  background:#393E46;
+  padding:25px 10%;
+  display:flex;
+  justify-content:space-between;
+  font-size:13px;
+  color:#DFD0B8;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">WebDesignPro</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#" class="btn-quote">Get a Quote</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Creative Web Design Solutions</h1>
+    <p>Building Modern and Responsive Websites</p>
+    <a href="#" class="btn-quote">Get Started</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://via.placeholder.com/400x250/222831/DFD0B8?text=Interface+Graphic">
+  </div>
+</section>
+
+<section class="services">
+  <div class="service-card">
+    <span>🖥️</span>
+    <h3>Web Design</h3>
+    <p>Creative and responsive designs</p>
+  </div>
+  <div class="service-card">
+    <span>⚙️</span>
+    <h3>Development</h3>
+    <p>Robust and scalable solutions</p>
+  </div>
+  <div class="service-card">
+    <span>📈</span>
+    <h3>SEO Optimization</h3>
+    <p>Improve your search rankings</p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>Professional web design and development services to help your business grow. We focus on results and user experience.</p>
+    <br>
+    <a href="#" class="btn-quote">Learn More</a>
+  </div>
+  <div class="about-image">
+    <img src="https://via.placeholder.com/500x300/222831/DFD0B8?text=Office+Workspace">
+  </div>
+</section>
+
+<section class="projects">
+  <h2>Our Recent Projects</h2>
+  <div class="project-grid">
+    <div class="project-item">
+      <img src="https://via.placeholder.com/300x180/222831/DFD0B8?text=E-Commerce+Site">
+      <p>E-Commerce Site</p>
+    </div>
+    <div class="project-item">
+      <img src="https://via.placeholder.com/300x180/222831/DFD0B8?text=Portfolio+Website">
+      <p>Portfolio Website</p>
+    </div>
+    <div class="project-item">
+      <img src="https://via.placeholder.com/300x180/222831/DFD0B8?text=Business+Landing+Page">
+      <p>Business Landing Page</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 WebDesignPro. All rights reserved.</div>
+  <div>Follow us: [f] [t] [i]</div>
+</footer>
+
+</body>
+</html>

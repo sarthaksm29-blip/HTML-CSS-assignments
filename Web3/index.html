@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueMotion Surf</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="logo">BlueMotion</div>
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#packages">Packages</a>
+<a href="#booking">Book</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>RIDE THE WAVE</h1>
+<p>Feel the ocean power</p>
+<button onclick="scrollToSection('about')">Explore</button>
+</div>
+</section>
+
+<section id="about" class="about reveal">
+<div class="about-text">
+<h2>Ocean Lifestyle</h2>
+<p>Surfing connects you to rhythm, balance and power. It's freedom in motion.</p>
+</div>
+<div class="about-img"></div>
+</section>
+
+<section id="gallery" class="gallery reveal">
+<h2>Surf Moments</h2>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" onclick="openLightbox(this.src)">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" onclick="openLightbox(this.src)">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="openLightbox(this.src)">
+<img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda" onclick="openLightbox(this.src)">
+</div>
+</section>
+
+<section id="packages" class="packages reveal">
+<h2>Surf Packages</h2>
+<div class="slider">
+<div class="slide active">
+<h3>Beginner</h3>
+<p>2 Hour Session</p>
+<span>₹1500</span>
+</div>
+<div class="slide">
+<h3>Intermediate</h3>
+<p>Wave Control Training</p>
+<span>₹3000</span>
+</div>
+<div class="slide">
+<h3>Pro Camp</h3>
+<p>3 Day Intensive</p>
+<span>₹8000</span>
+</div>
+</div>
+<div class="controls">
+<button onclick="prevSlide()">◀</button>
+<button onclick="nextSlide()">▶</button>
+</div>
+</section>
+
+<section id="booking" class="booking reveal">
+<h2>Book Your Session</h2>
+<form onsubmit="return validateForm()">
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<input type="date" id="date">
+<button type="submit">Confirm Booking</button>
+</form>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<footer>
+BlueMotion Surf © 2026
+</footer>
+
+<script>
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+
+const slides=document.querySelectorAll(".slide");
+let current=0;
+
+function showSlide(index){
+slides.forEach(s=>s.classList.remove("active"));
+slides[index].classList.add("active");
+}
+
+function nextSlide(){
+current=(current+1)%slides.length;
+showSlide(current);
+}
+
+function prevSlide(){
+current=(current-1+slides.length)%slides.length;
+showSlide(current);
+}
+
+function validateForm(){
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+if(name===""||email===""){
+alert("Please fill all fields");
+return false; 
+}
+alert("Booking Confirmed!");
+return false;
+}
+
+function openLightbox(src){
+document.getElementById("lightbox").style.display="flex";
+document.getElementById("lightbox-img").src=src;
+}
+
+function closeLightbox(){
+document.getElementById("lightbox").style.display="none";
+}
+
+window.addEventListener("scroll",()=>{
+document.querySelectorAll(".reveal").forEach(el=>{
+let top=el.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+el.classList.add("active");
+}
+});
+});
+</script>
+
+</body>
+</html>

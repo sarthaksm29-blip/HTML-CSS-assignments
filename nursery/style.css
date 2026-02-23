@@ -1,0 +1,214 @@
+:root {
+  --bg: #f5f7f1;
+  --paper: #ffffff;
+  --text: #243126;
+  --muted: #5c6e5f;
+  --accent: #2f7d32;
+  --accent-dark: #245f27;
+  --line: #dce5d9;
+  --radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(to bottom, rgba(10, 20, 12, 0.38), rgba(10, 20, 12, 0.38)),
+    url("https://images.unsplash.com/photo-1466781783364-36c955e42a7f?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #f8fff7;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.4px;
+}
+
+.hero-content {
+  padding: 6rem 0 5rem;
+  max-width: 640px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.hero-content h2 {
+  margin: 0.7rem 0;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.subtitle {
+  margin: 0 0 1.4rem;
+  color: #e6f0e4;
+  max-width: 54ch;
+}
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.section-head h3,
+.contact-card h3 {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #e5f3e4;
+  border-color: #c0dfbf;
+  color: #1f5a23;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.plant-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 26px rgba(18, 33, 19, 0.09);
+}
+
+.plant-card img {
+  height: 210px;
+  object-fit: cover;
+}
+
+.plant-info {
+  padding: 0.9rem;
+}
+
+.plant-info h4 {
+  margin: 0 0 0.2rem;
+}
+
+.plant-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.contact {
+  padding-top: 1rem;
+}
+
+.contact-card {
+  text-align: center;
+  background: linear-gradient(120deg, #f2f8f0, #ffffff);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.contact-card p {
+  margin: 0.45rem 0;
+  color: var(--muted);
+}
+
+.hello-msg {
+  min-height: 1.2em;
+  font-weight: 600;
+  color: #1f5a23;
+}
+
+@media (max-width: 640px) {
+  .hero-content {
+    padding: 4.5rem 0 4rem;
+  }
+
+  .plant-card img {
+    height: 190px;
+  }
+}

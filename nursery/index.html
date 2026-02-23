@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenNest Nursery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <h1 class="logo">GreenNest</h1>
+      <a href="#contact" class="btn btn-outline">Visit Us</a>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">Fresh Plants, Happy Spaces</p>
+      <h2>Bring Home Nature's Calm</h2>
+      <p class="subtitle">
+        A cozy local nursery with healthy indoor plants, flowering favorites,
+        and easy-care greens for every home.
+      </p>
+      <a href="#plants" class="btn">Explore Plants</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="plants" class="section container">
+      <div class="section-head">
+        <h3>Popular Plants</h3>
+        <div class="filters" aria-label="Plant categories">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="indoor">Indoor</button>
+          <button class="filter-btn" data-filter="flowering">Flowering</button>
+          <button class="filter-btn" data-filter="easy">Easy Care</button>
+        </div>
+      </div>
+
+      <div class="plant-grid">
+        <article class="plant-card" data-category="indoor easy">
+          <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80" alt="Snake plant in a clay pot">
+          <div class="plant-info">
+            <h4>Snake Plant</h4>
+            <p>Strong, clean look and low maintenance.</p>
+          </div>
+        </article>
+
+        <article class="plant-card" data-category="flowering">
+          <img src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?auto=format&fit=crop&w=900&q=80" alt="Pink flowering plant in bloom">
+          <div class="plant-info">
+            <h4>Anthurium</h4>
+            <p>Bright blooms that add color to corners.</p>
+          </div>
+        </article>
+
+        <article class="plant-card" data-category="indoor easy">
+          <img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?auto=format&fit=crop&w=900&q=80" alt="Pothos hanging from a shelf">
+          <div class="plant-info">
+            <h4>Pothos</h4>
+            <p>Fast-growing vines for shelves and windows.</p>
+          </div>
+        </article>
+
+        <article class="plant-card" data-category="flowering easy">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Peace lily with white flower">
+          <div class="plant-info">
+            <h4>Peace Lily</h4>
+            <p>Elegant leaves and soft white flowers.</p>
+          </div>
+        </article>
+
+        <article class="plant-card" data-category="indoor">
+          <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80" alt="Monstera plant with split leaves">
+          <div class="plant-info">
+            <h4>Monstera</h4>
+            <p>Bold tropical leaves for statement spaces.</p>
+          </div>
+        </article>
+
+        <article class="plant-card" data-category="easy">
+          <img src="https://images.unsplash.com/photo-1459156212016-c812468e2115?auto=format&fit=crop&w=900&q=80" alt="Succulents in small pots">
+          <div class="plant-info">
+            <h4>Succulent Mix</h4>
+            <p>Tiny, beautiful plants that thrive with little care.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-card">
+        <h3>Visit GreenNest Nursery</h3>
+        <p>Open daily, 9:00 AM - 7:00 PM</p>
+        <p>12 Garden Lane, City Center</p>
+        <button id="helloBtn" class="btn">Say Hello</button>
+        <p id="helloMsg" class="hello-msg" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

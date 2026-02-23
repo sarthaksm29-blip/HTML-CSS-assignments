@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<svg width="300" height="300">
+  <circle cx="150" cy="150" r="135" fill = "white" stroke="black" stroke-width="20" />
+  <text x="145" y="190" text-anchor="middle" font-size="120" font-weight="bold" stroke="black" stroke-width="6" font-family="Arial">CC</text>
+</svg>
+
+<svg width="300" height="300">
+  <polygon
+    points="150,30 270,120 220,260 80,260 30,120" stroke="black" stroke-width="4" fill="skyblue"/>
+</svg>
+
+<svg width="300" height="300">
+  <polygon points="150,30 185,120 270,120 200,175 230,260 150,210 70,260 100,175 30,120 115,120" stroke="black" stroke-width="4" fill="yellow"/>
+</svg>
+
+<svg width="300" height="300">
+  <path
+    d="M150 30 L190 110 L270 110 L205 165 L230 250 L150 200 L70 250 L95 165 L30 110 L110 110 Z" stroke="black"stroke-width="4" fill="none"
+  />
+</svg>
+
+
+<svg width="300" height="120" style="border:1px solid black">
+    <circle cx="150" cy="60" r="20" fill="purple">
+        <animate Transform attributeName="transform" type="scale" from="1" to="1.5" dur="1s" repeatCount="indefinite" />
+    </circle>
+</svg>
+
+<svg width="300" height="120" style="border:1px solid black">
+    <rect x="130" y="40" width="40" height="40" fill="orange">
+        <animate Transform attributeName="transform" type="rotate" from="0 150 60" to="360 150 60" dur="2s" repeatCount="indefinite" />
+    </rect>
+</svg>
+
+
+<svg width="300" height="120" style="border:1px solid black">
+    <text x="80" y="70" font-size="30" fill="black">
+        SVG
+        <animate attributeName="opacity" from="0" to="1" dur="1s" repeatCount="indefinite" />
+    </text>
+</svg>
+
+
+
+<svg width="300" height="120" style="border:1px solid black">
+    <path d="M 20 60 L 280 60" stroke="pink" stroke-width="4" fill="none" stroke-dasharray="260" stroke-dashoffset="260">
+        <animate
+            attributeName="stroke-dashoffset" from="260" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+</svg>
+</body>
+</html>

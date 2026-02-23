@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noir Coffee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Noir Coffee</h1>
+        <p>Handcrafted coffee brewed for thinkers, creators and dreamers.</p>
+        <div class="buttons">
+            <button onclick="openMenu()">View Menu</button>
+            <button class="outline">Book Table</button>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="glass">
+            <h2>Today's Best</h2>
+            <div class="item">
+                <span>Signature Latte</span>
+                <span>₹220</span>
+            </div>
+            <div class="item">
+                <span>Hazelnut Cold Brew</span>
+                <span>₹260</span>
+            </div>
+            <div class="item">
+                <span>Mocha Bliss</span>
+                <span>₹240</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<section class="menu-popup" id="menuPopup">
+    <div class="popup-content">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">Espresso <span>₹120</span></div>
+            <div class="menu-card">Americano <span>₹150</span></div>
+            <div class="menu-card">Cappuccino <span>₹180</span></div>
+            <div class="menu-card">Vanilla Latte <span>₹200</span></div>
+            <div class="menu-card">Caramel Frappe <span>₹250</span></div>
+            <div class="menu-card">Cold Brew <span>₹210</span></div>
+        </div>
+        <button onclick="closeMenu()">Close</button>
+    </div>
+</section>
+
+<script>
+function openMenu(){
+    document.getElementById("menuPopup").style.display="flex"
+}
+function closeMenu(){
+    document.getElementById("menuPopup").style.display="none"
+}
+</script>
+
+</body>
+</html>

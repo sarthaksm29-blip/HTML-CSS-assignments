@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My HTML Page </title>
+  <link rel="stylesheet" href="portfolio.css">
+
+</head>
+<header>BLOG</header>
+<body>
+  <h1>Sarthakkkkkkkkk</h1><hr>
+  <p>Hey, I’m Sarthakkkkkkkkk , and this little corner of the internet is all about my journey what I’m learning, what I’m building, and who I’m becoming.
+I’ve always believed in growth, creativity, and keeping things simple. This website is like my digital diary where I share pieces of my life, my skills, and the things that inspire me.</p>
+<hr>
+I’m a student, learner, and someone who loves experimenting with technology.
+I enjoy creating aesthetic things whether it's a web page layout, a project, or something random I coded at 2am.
+
+I’m the kind of person who likes to do the things given below:-
+
+<a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwNUjLMGD0EsxNzEvOSC0uSS1SKM3LLElNAQCBiQmg&q=manchester+united&oq=&gs_lcrp=EgZjaHJvbWUqCQgCEC4YJxjqAjIPC">
+    <img width="100px" src="linkedin.jpg" alt="linked in logo">
+</a>
+<ul>My Skills
+    <li>Dancing</li>
+    <li>Singing</li>
+    <li>Travelling</li>
+</ul><hr>
+<ol>Want to learn
+    <li>new coding language</li>
+    <li>CSS</li>
+</ol><hr>
+<ul>
+  <li>Frontend
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+  </li>
+  <li>Backend</li>
+</ul><hr>
+<h1>
+    My Favourite ballers
+</h1>
+<table border = "3"> 
+    <tr>
+        <th>Players Name </th>
+        <th> Their Club</th>
+        <th> Their Nationality </th>
+    </tr>
+    <tr>
+        <td> Klyian Mbappe</td>
+        <td> Real Madrid </td>
+        <td> French </td>
+    </tr>
+    <tr>
+        <td>Kenan Yildiz</td>
+        <td> Juventus </td>
+        <td> Turkish </td>
+    </tr>
+    <tr> 
+        <td> Bruno Fernandes </td>
+        <td> Man Utd  </td>
+        <td> Portugese </td>
+    </tr>
+</table>
+    
+
+</body><hr>
+<footer>
+  My html-Page @2026 created by Sarthakkk...
+</footer><hr>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio Button</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<audio id="audio">
+    <source src = "lutt.mp3" type="audio/mpeg">
+
+</audio>
+<button id="audioBtn" onclick="toggleAudio()">Play</button>
+<script>
+    function toggleAudio() {
+        var audio = document.getElementById("audio");
+        var btn = document.getElementById("audioBtn");
+
+        if (audio.paused) {
+            audio.play();
+            btn.innerText = 'Pause' ;
+
+        } else
+        audio.pause();
+        btn.innerText = "Play";
+
+    }
+</script>
+</body>
+</html>
